@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>大数据可视化</title>
+  </head>
+	<style>
+		/* .container{position: fixed;height: 100%;width: 100%;background: url(../src/assets/low/low_bg.png) no-repeat center center;background-size: 100% 100%;position: relative;}
+		.container .cont{position: absolute;left: 50%;top: 40%;transform: translate(-50%,-50%);color: #FFFFFF;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+		.container .cont img{width: 180px;margin-bottom: 20px;}
+		.container .cont .title{font-size: 16px;margin-bottom: 20px;}
+		.container .cont .home-btn{background-color: #0699fe;width: 180px;height: 36px;border-radius: 100px;text-align: center;font-size: 16px;line-height: 36px;cursor: pointer;margin-bottom: 60px;}
+		.container .cont .brower-box{display: flex;align-items: center;margin-bottom: 30px;}
+		.container .cont .brower-box .brower-item{display: flex;flex-direction: column;align-items: center;margin: 0 20px;}
+		.container .cont .brower-box .brower-item img{width: 55px;margin-bottom: 5px;}
+		.container .cont .brower-box .brower-item .text{font-size: 14px;}
+		.container .cont .double-info{letter-spacing: 2px;} */
+		.container{position: fixed;height: 100%;width: 100%;background: url(../src/assets/low/low_bg.png) no-repeat center center;background-size: 100% 100%;position: relative;display: table;}
+		.container .cont{color: #FFFFFF;text-align: center;display: table-cell;padding-top: 100px;padding-bottom: 100px;}
+		/* .container .cont2{left: -50%;top: -50%;position: relative;} */
+		.container .cont img{width: 180px;margin: 0 auto;margin-bottom: 20px;}
+		.container .cont .title{font-size: 16px;margin-bottom: 20px;}
+		.container .cont .home-btn{background-color: #0699fe;width: 180px;height: 36px;border-radius: 100px;text-align: center;font-size: 16px;line-height: 36px;margin: 0 auto;margin-bottom: 60px;}
+		.container .cont .brower-box{margin-bottom: 30px;}
+		.container .cont .brower-box .brower-item{margin: 0 20px;display: inline-block;*zoom:1;*display:inline;vertical-align: center;text-align: center;width: 120px;}
+		.container .cont .brower-box .brower-item img{width: 55px;margin-bottom: 15px;}
+		.container .cont .brower-box .brower-item .text{font-size: 14px;width: 100%;display: inline-block;*zoom:1;*display:inline;text-align: center;}
+		.container .cont .double-info{letter-spacing: 2px;}
+	</style>
+	<script type="text/javascript">
+		var theUA = window.navigator.userAgent.toLowerCase();
+		if ((theUA.match(/msie\s\d+/) && theUA.match(/msie\s\d+/)[0]) || (theUA.match(/trident\s?\d+/) && theUA.match(/trident\s?\d+/)[0])) {
+				var ieVersion = theUA.match(/msie\s\d+/)[0].match(/\d+/)[0] || theUA.match(/trident\s?\d+/)[0];
+				if (ieVersion < 10) {
+					var html = '';
+					html += '<div class="container">';
+					html += '<div class="cont"><div class="cont2">';
+					html += '<img src="../src/assets/low/low.png" alt="">';
+					html += '<div class="double-info">您正使用的浏览器版本过低，将不能正常浏览和使用</div>'
+					html += '<div class="double-info" style="margin-bottom:25px;">如果您使用的是双核浏览器，请切换到<span style="color:#0699fe;">极速模式</span>访问</div>';
+					html += '<div class="title">或推荐使用以下浏览器</div>';
+					html += '<div class="brower-box">';
+					html += '<div class="brower-item">';
+					html += '<img src="../src/assets/low/chrome.png" alt="">';
+					html += '<div class="text">谷歌40</div>';
+					html += '</div>';
+					html += '<div class="brower-item">';
+					html += '<img src="../src/assets/low/ff.png" alt="">';
+					html += '<div class="text">火狐</div>';
+					html += '</div>';
+					html += '<div class="brower-item">';
+					html += '<img src="../src/assets/low/edge.png" alt="">';
+					html += '<div class="text">IE10</div>';
+					html += '</div>';
+					html += '</div>';
+					html += '</div></div>';
+					html += '</div>';
+					document.writeln(html);
+					document.body.style.overflow = "hidden";
+				};
+		}
+		
+		
+	</script>
+	<script type="text/javascript" src="./static/ckplayer/ckplayer.js" charset="UTF-8"></script>
+	<script src=./static/config.js></script>
+	<script type="text/javascript">
+
+	</script>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

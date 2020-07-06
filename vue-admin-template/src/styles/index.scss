@@ -1,0 +1,185 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+.app-main {
+  min-height: 100%
+}
+
+.app-container {
+  padding: 20px 0 0 20px;
+}
+
+
+img{
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+}
+.flex{
+	display: flex;
+}
+.fl-no{
+	flex-wrap: nowrap;
+}
+.fl-wa{
+	flex-wrap:wrap; 
+}
+.al-c{
+	align-items: center;
+}
+.jc-a{
+	justify-content: space-around;
+}
+.jc-c{
+	justify-content: center;
+}
+.jc-b{
+	justify-content: space-between;
+}
+.jc-e{
+	justify-content: flex-end;
+}
+.k{
+	position: relative;
+}
+.k-title{
+	position: absolute;
+	color: #fff;
+	left:10%;
+	top:18px;
+	font-size: 16px;
+}
+.k-title2{
+	position: absolute;
+	color: #fff;
+	left:0;
+	right:0;
+	margin: 0 auto;
+	text-align: center;
+	top:14px;
+}
+.k>img{
+	width: 100%;
+	height: 100%;
+}
+.label-left-bottom{
+	position: absolute;
+	left: 8.7%;
+	bottom: 20px;
+	font-size: 12px;
+	color: #999999;
+}
+.label-left-top{
+	position: absolute;
+	left: 8.7%;
+	bottom: 40px;
+	font-size: 20px;
+	color: #0eadff;
+}
+.label-right-bottom{
+	text-align: right;
+	position: absolute;
+	right: 8.7%;
+	bottom: 20px;
+	font-size: 12px;
+	color: #999999;
+}
+.label-right-top{
+	text-align: right;
+	position: absolute;
+	right: 8.7%;
+	bottom: 40px;
+	font-size: 20px;
+	color: #0eadff;
+}
+.mb-20{
+	margin-bottom: 20px;
+}
+.sj::before{
+	content: "";
+    position: absolute;
+    left: 3px;
+    top:3px;
+	z-index: 3;
+    width: 0;
+    height: 0;
+    border-top: 12px solid #098ad9;
+    border-left: 12px solid #098ad9;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+	  
+}
+@media screen and (max-width:1366px) {
+		.k-title {
+			font-size: 12px;
+		}
+	
+	}

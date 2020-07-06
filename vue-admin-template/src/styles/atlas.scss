@@ -1,0 +1,227 @@
+.view-container-atlas{
+	display: flex;
+	padding:20px 0 0px 20px;
+	box-sizing: border-box;
+	.container-box{
+		background: url(../../assets/atlas/pic_bg.png) no-repeat;
+		background-size: 100% 100%;
+		width: 100%;
+		box-sizing: border-box;
+		// padding: 1px 2px;
+		border: 2px solid #18c6ff;
+		margin-bottom: 20px;
+		.search-box{
+			width: 100%;
+			height: 100px;
+			background-color: #0f4178;
+			display: flex;
+			align-items: center;
+			color: #FFFFFF;
+			font-size: 14px;
+			.el-button{
+				border-radius: 0;
+				padding: 10px 25px;
+				margin-left: 20px;
+			}
+			.search-time{
+				position: relative;
+				// width: 510px;
+				margin-left: 40px;
+				.start-icon{
+					position: absolute;
+					top: 7px;
+					left: 55px;
+					width: 26px;
+					height: 26px;
+				}
+				.end-icon{
+					position: absolute;
+					top: 7px;
+					right: 185px;
+					width: 26px;
+					height: 26px;
+				}
+				.el-input__inner{
+					background:none;
+					border: none;
+					padding: 0;
+					width: auto;
+					i{
+						display: none;
+					}
+					.el-range-input{						
+						height: 110% \0;
+						background-color: #09244f;
+						border: solid 1px #1169c2;
+						width: 220px;
+						color: #FFFFFF;
+					}
+					input::-ms-clear{display: none;}
+					.el-range-separator{
+						color: #FFFFFF;
+						line-height: 40px;
+					}
+				}
+			}
+			.camera-input{
+				margin-left: 40px;
+				.el-input{
+					width: 200px;
+					.el-input__inner{
+						background-color: #09244f;
+						border: solid 1px #1169c2;
+						border-radius: 0;
+						color: #FFFFFF;
+					}
+				}
+			}
+			
+		}
+		.pic-box{
+			box-sizing: border-box;
+			padding-left: 20px;
+			padding-bottom: 20px;
+			.pic-item{
+				margin-top:20px;
+				.pic-date{
+					color: #FFFFFF;
+					font-size: 14px;
+				}
+				.pic-list{
+					display: flex;
+					flex-wrap: wrap;
+					.pic-img{
+						margin-top: 10px;
+						margin-right: 10px;
+						width: 256px;
+						height: 144px;
+					}
+				}
+			}
+		}
+		.no-data{
+			color: #FFFFFF;
+			text-align: center;
+			img{
+				margin: 0 auto;
+				margin-bottom: 20px;
+			}
+		}
+		.banner-bg{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			.banner-bg-box{
+				position: relative;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.banner-box{
+			position: absolute;
+			background: #09244f;
+			width: 900px;
+			height: 420px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			border: 2px solid #18c6ff;
+			.banner-title{
+				color: #FFFFFF;
+				font-size: 14px;
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+			.banner-left{
+				width: 640px;
+				height: 360px;
+				display: inline-block;
+				vertical-align: top;
+				.swiper-container{
+					width: 100%;
+					height: 100%;
+					.swiper-slide{
+						width: 100%;
+						height: 100%;
+						img{
+							width: 100%;
+							height: 100%;
+						}
+					}
+				}
+			}
+			.banner-right{
+				width: 128px;
+				display: inline-block;
+				vertical-align: top;
+				margin-left: 25px;
+				position: relative;
+				height: 360px;
+				.swiper-container{
+					width: 100%;
+					height: 300px;
+					margin-top : 34px;
+					.swiper-slide{
+						height: auto;
+						opacity: 0.4;
+						img{
+							width: 100%;
+							height: 72px;
+						}
+					}
+					.swiper-slide-active {
+						opacity: 1;
+					}
+				}
+				
+				.banner-top{
+					position: absolute;
+					// left: 12%;
+					top: 0;
+					width: 92px;
+					height: 26px;
+					left: 18px;
+					img{
+						margin: 0 auto;
+						width: 90px;
+					}
+				}
+				.banner-bottom{
+					position: absolute;
+					bottom: 0;
+					width: 92px;
+					height: 26px;
+					left: 18px;
+					img{
+						margin: 0 auto;
+						width: 90px;
+					}
+				}
+				.swiper-button-disabled{
+					cursor: not-allowed;
+				}
+			}
+		}
+	}
+}
+.clear{
+	clear: both;
+}
+
+@media screen and (min-width: 1600px) {
+    .info-box{
+		font-size: 14px !important;
+	}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)  {
+    .search-time{
+    	
+    		.el-range-input{						
+    			height: 110% ;
+    	}
+    }
+}
